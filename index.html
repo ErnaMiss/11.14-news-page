@@ -13,21 +13,42 @@
             margin: 0px;
         }
 
-        h1 {}
-
-        div {
-            background-color: yellow;
-
+        h1 {
+            font-size: bold;
+            padding-left: 5px;
         }
-
-        div div {
-            background-color: aqua;
-            display: inline-block;
-        }
+        
         #date {
             text-align: right;
-            tex
+            font-style: italic;
+            border-style: none none solid none;
+            padding-right: 15px;
+            border-width: 2px;
+            border-color: gray;
+            
         }
+        #name {
+            text-align: left;
+            font-weight: bold;
+            border-style: none none solid none;
+            border-width: 2px;
+            border-color: gray;
+            padding-left: 2px;
+        }
+        h2 {
+            border-style: none none solid none;
+            border-width: 2px;
+            border-color: gray;
+            padding-left: 5px;
+        }
+        #table {
+            padding-left: 10px;
+            padding-bottom: 20px;
+        }
+        footer {
+            padding-left: 5px;
+        }
+         
     </style>
 </head>
 
@@ -37,9 +58,9 @@
     </header>
     <main>
         <h2>News</h2>
-        <table>
+        <table id="table">
             <tr>
-                <th>
+                <th id="name">
                     About this Template
                 </th>
                 <th id="date">
@@ -48,24 +69,24 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                <p>Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    leap into electronic typesetting, remaining essentially unchanged. </p>
+                <p>It was popularised in the 1960s
                     with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </td>
             </tr>
         </table>
-        <table>
+        <table id="table">
             <tr>
-                <th>
-                    About this Template
+                <th id="name">
+                    Creating News On Your Site
                 </th>
-                <th class="date">
-                    February 15, 2003
+                <th id="date">
+                    January 17, 2003
                 </th>
             </tr>
             <tr>
@@ -81,13 +102,13 @@
                 </td>
             </tr>
         </table>
-        <table>
+        <table id="table">
             <tr>
-                <th>
-                    About this Template
+                <th id="name">
+                    Creating A News Archive
                 </th>
-                <th class="date">
-                    February 15, 2003
+                <th id="date">
+                    January 15, 2003
                 </th>
             </tr>
             <tr>
@@ -104,7 +125,7 @@
             </tr>
         </table>
     </main>
-    <footer>
+    <footer id="footer">
         <p>MyBitByBit Site &copy; 2021 All rights reserved.</p>
     </footer>
 
