@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en=US">
+
+<head>
+    <title>
+        News page with div
+    </title>
+    <meta charset="utf-8">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            margin: 0px;
+        }
+        div {
+            display: inline-block;
+        }
+        header {
+            background-color: gainsboro;
+        }
+        .header {
+            color: red;
+            font-weight: bold;
+        }
+        .header > div {
+            color: blue;
+            margin-left: 40px;
+            font-weight: normal;
+        }
+        .sideNav {
+            float: right;
+        }
+        img {
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header"><img src="img/logo.png">  Most Popular Stories
+            <div>
+                What's This?
+            </div>
+        </div>
+        
+        <div class="sideNav">
+            <div>
+                Now
+            </div>
+            <div>
+                Today
+            </div>
+            <div>
+                This week
+            </div>
+        </div>
+
+    </header>
+
+</body>
+
+</html>
