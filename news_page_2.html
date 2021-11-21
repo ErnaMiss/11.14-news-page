@@ -10,7 +10,18 @@
         }
 
         body {
-            margin: 10px;
+            margin: 0.625px;
+        }
+
+        img {
+            width: 18.75rem;
+            float: left;
+        }
+
+        clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
         }
 
         #upper-table {
@@ -18,28 +29,29 @@
             width: 97%;
             color: white;
             border-collapse: collapse;
-            font-size: 20px;
-
+            font-size: 1.25rem;
+            
         }
 
-        #coupon-table {
+        #coupon {
             border-style: dashed;
             background-color: yellow;
-            he
+            border-width: 18.75rem;
         }
 
         #first {
             text-align: left;
-            padding-left: 15px;
-            padding-bottom: 5px;
-            padding-top: 5px;
+            padding-left: 0.938rem;
+            padding-bottom: 0.313rem;
+            padding-top: 0.313rem;
             font-family: 'Lucida Sans';
+            display: table column;
         }
 
         #second {
             text-align: center;
-            padding-right: 100px;
-            letter-spacing: 2px;
+            padding-right: 6.25rem;
+            letter-spacing: 0.125rem;
             font-family: 'Lucida Sans';
         }
 
@@ -66,11 +78,12 @@
         }
 
         #firstcolumn {
-            float:left;
+            float: left;
             width: 30%;
             margin-left: 0px;
             padding-left: 0px;
             padding-right: 100px;
+            display: table-column;
         }
 
         #secondcolumn {
@@ -95,7 +108,7 @@
             margin: 0px;
             padding-top: 0px;
             text-orientation: upright;
-            
+
 
         }
 
@@ -113,12 +126,13 @@
             margin-left: 5px;
             margin-right: 5px;
             margin-bottom: 0px;
+            width: 18.75rem;
         }
+
         footer {
             color: grey;
             margin-top: 0px;
         }
-      
     </style>
 </head>
 
@@ -147,10 +161,10 @@
         <table>
             <tr>
                 <th id="firstcolumn">
-                    <img src="img/man_unknow.PNG" width="370px">
+                    <img src="img/man_unknow.PNG">
                     <p>
                         <table>
-                            <h5>
+                            <h5 style="clear:left">
                                 -Coupon-
                             </h5>
                         </table>
