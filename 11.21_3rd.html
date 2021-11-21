@@ -19,25 +19,54 @@
         body {
             margin: 0px;
 
+            height: 100vh;
+
         }
 
         .grad {
             margin: 0px;
-            height: 100vh;
+            height: 100px;
             background: white;
             border: 3px solid transparent;
-            border-image: linear-gradient(to bottom, lightgray 0%, white 10%);
+            border-image: linear-gradient(to bottom, lightgray 0%, white 100%);
             border-image-slice: 1;
         }
 
-        div::before {
+        h1 {
+            color: #01796F;
+            position: sticky;
+            background-color: transparent;
+            margin-top: -60px;
+            padding-left: 20px;
+            font-family: arial;
+            float: left;
+            width: 70%;
+        }
+
+        .descr {
+            font-weight: bold;
+            float: left;
+            width: 70%;
+        }
+
+        nav {
+            width: 25%;
+            display: inline;
+        }
+
+        .grad::before {
             content: '';
             display: block;
             position: relative;
-
-            height: 100vh;
-            background-image: linear-gradient(to bottom, lightgray, white 10%);
+            height: 100px;
+            background-image: linear-gradient(to bottom, lightgray, white 100%);
+            margin: 2px;
         }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: inline-block;
         }
 
         .col-1 {
@@ -91,20 +120,43 @@
 </head>
 
 <body>
-    <div class="grad">
-        <header>
+    <header>
+        <div class="grad">
 
-        </header>
-        <nav>
+            <h1>
+                Meet the HBCWeb Team
+            </h1>
+            <p class="descr">HBCWeb is comprised of ultra-talented and experienced designers, developers and
+                programmers. Learn more
+                about each person by reading their descriptions below: (yes it's currently all dudies...) </p>
 
-        </nav>
-        <main>
+        </div>
+    </header>
+    <nav>
+        <div>
+            rettr
+        </div>
+        <div>
+            rtrt
+        </div>
+        <div>
+            rey
+        </div>
+        <div>
+            rey
+        </div>
+        <div>
+            eytry
+        </div>
 
-        </main>
-        <footer>
+    </nav>
+    <main>
 
-        </footer>
-    </div>
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
 </head>
 
