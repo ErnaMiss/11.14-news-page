@@ -41,17 +41,43 @@
             font-family: arial;
             float: left;
             width: 70%;
+            margin-bottom: 0px;
         }
 
         .descr {
             font-weight: bold;
             float: left;
-            width: 70%;
+            width: 73%;
+            font-family: arial;
         }
 
         nav {
-            width: 25%;
+            width: 27%;
             display: inline;
+        }
+        
+
+        .picture {
+            width: 29%;
+            float:left;
+            margin: 0px;
+            height: 200px;
+            background: white;
+            border: 3px solid transparent;
+            border-color:lightgray;
+            padding: 2px;
+            
+           }
+           .picture::before {
+            content: '';
+            display: block;
+            position: relative;
+            height: 100px;
+            background-color: white;
+            
+        }
+        .about {
+            float: left;
         }
 
         .grad::before {
@@ -151,6 +177,13 @@
 
     </nav>
     <main>
+        <div>
+            <img class="picture" src="img/boy1.PNG" alt="Rob Carling">
+
+        </div>
+        <div class="about">
+            jghjhb
+        </div>
 
     </main>
     <footer>
