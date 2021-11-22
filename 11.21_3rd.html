@@ -31,6 +31,9 @@
             border-image: linear-gradient(to bottom, lightgray 0%, white 100%);
             border-image-slice: 1;
         }
+        a {
+            color: rgb(0 203 254);
+        }
 
         h1 {
             color: #00566d;
@@ -53,10 +56,13 @@
         }
 
         nav {
-            width: 27%;
+            width: 20%;
             display: inline;
             float: right;
-            height: 100vh;
+            
+            text-align: left;
+            margin-left: 1rem;
+            margin-right: 2.4rem;
         }
 
 
@@ -64,11 +70,11 @@
             width: 23%;
             float: left;
             margin-left: 1.25rem;
-
             background: white;
             border: 0.25rem solid transparent;
             border-color: lightgray;
             padding: 0.125rem;
+            margin-bottom: 1rem;
 
         }
 
@@ -86,29 +92,23 @@
             background-color: #00566d;
             color: white;
             padding: 0.563rem;
-            padding-left: 15px;
+            padding-left: 0.938rem;
             font-weight: bold;
-            margin-left: 10px;
+            margin-left: 0.625rem;
             width: 46%;
             font-family: arial;
-
-
-
         }
 
         .about2nd {
             color: rgb(0 203 254);
             display: inline-block;
-
-
         }
 
         .table {
             padding: 0px;
             color: black;
             background-color: white;
-            padding: 20px;
-
+            padding: 1.25rem;
             background-color: red;
             margin-top: 0px;
             float: left;
@@ -122,20 +122,54 @@
             display: inline;
             width: 46%;
             font-family: arial;
-            margin-left: 15px;
-            font-size: 17px;
-            line-height: 25px;
-            margin-bottom: 60px;
+            margin-left: 0.938rem;
+            font-size: 1.063rem;
+            line-height: 1.563rem;
+            margin-bottom: 3.75rem;
+            padding-left: 1rem;
 
+        }
+
+        .nav1 {
+            color: white;
+            background-color: #00566d;
+            padding: 0.563rem;
+            font-weight: bold;
+
+            text-align: left;
+        }
+        .navh2 {
+            color: white;
+            background-color: #00566d;
+            padding: 0.563rem;
+            font-weight: bold;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .button {
+            background-color: lightgray;
+            color: rgb(0 203 254);
+            text-decoration: underline;
+            font-weight: bold;
+            padding: 0.75rem;
+
+        }
+
+        .button:hover {
+            background-color: white;
+            color: #00566d;
+            text-decoration: none;
         }
 
         .grad::before {
             content: '';
             display: block;
             position: relative;
-            height: 100px;
+            height: 6.25rem;
             background-image: linear-gradient(to bottom, lightgray, white 100%);
-            margin: 2px;
+            margin: 0.125rem;
         }
 
         .clearfix::after {
@@ -208,32 +242,33 @@
         </div>
     </header>
     <nav>
-        <div>
-            retLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
-
-
+        <div class="nav1">
+            More About HBCWeb...
         </div>
-        <div >
-            rtrLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
+        <div class="button">
+            Company Overview
         </div>
-        <div>
-            rey
+        <div class="button">
+            Meet the Teams
         </div>
-        <div>
-            rey
+        <div class="button">
+            The Digs
+        </div>
+        <div class="button">
+            The Priceline PN
+        </div>
+        <div class="button">
+            Client Testimonials
+        </div>
+        <div class="navh2">
+            What our clients are saying...
         </div>
         <div>
-            eytry
+            While building my bussiness, I could not have imagined how crutial a website would possibly be.I did my
+            research and received.
+        </div>
+        <div>
+            <a href=""> View All Client Testimonials</a>
         </div>
 
     </nav>
@@ -247,12 +282,12 @@
             <div class="about">ROB CARLING -
                 <div class="about2nd">DEVELOPMENT MANAGER</div>
             </div>
-            <h3>
+            <h3 class="clearfix">
                 Rob oversees the day-to-day operations of HBCWeb. From the initial client interactions, to project
                 planning, to the design phase and into development. Rob is also responsible for some design work seen in
-                our Portfolio, including HBCWeb.com.</h3>
+                our <a href="">Portfolio</a>, including HBCWeb.com.</h3>
         </div>
-        <div>
+        <div style="clear:left">
             <img class="picture" src="img/boy2.PNG" alt="Rob Carling">
 
         </div>
@@ -261,12 +296,12 @@
             <div class="about">DUSTIN GREEN -
                 <div class="about2nd">LEAD DEVELOPER</div>
             </div>
-            <h3>
-                Rob oversees the day-to-day operations of HBCWeb. From the initial client interactions, to project
-                planning, to the design phase and into development. Rob is also responsible for some design work seen in
-                our Portfolio, including HBCWeb.com.</h3>
+            <h3 class="clearfix">
+                Dustin is our longest running developer, having been with the company for over 4 years. Dustin is
+                responsible for the development of initial Priceline Partner Network White-Label platform, and continues
+                to maintain and improve it on a day-t-day basis.</h3>
         </div>
-        <div>
+        <div style="clear:left">
             <img class="picture" src="img/boy3.PNG" alt="Rob Carling">
 
         </div>
@@ -275,12 +310,12 @@
             <div class="about">GLENN GENERAO -
                 <div class="about2nd">GRAPHIC DESIGNER</div>
             </div>
-            <h3>
-                Rob oversees the day-to-day operations of HBCWeb. From the initial client interactions, to project
-                planning, to the design phase and into development. Rob is also responsible for some design work seen in
-                our Portfolio, including HBCWeb.com.</h3>
+            <h3 class="clearfix">
+                Glenn is our longest-runnibg employee, having been hired in December of 2004. Glenn is responsible for
+                all things graphical, his unique and creative approach to design has been a key to establishing HBCWeb
+                as web design powerhouse.</h3>
         </div>
-        <div>
+        <div style="clear:left">
             <img class="picture" src="img/boy4.PNG" alt="Rob Carling">
 
         </div>
@@ -289,12 +324,26 @@
             <div class="about">WES SAYAS -
                 <div class="about2nd">LEAD PROGRAMMER</div>
             </div>
-            <h3>
-                Rob oversees the day-to-day operations of HBCWeb. From the initial client interactions, to project
-                planning, to the design phase and into development. Rob is also responsible for some design work seen in
-                our Portfolio, including HBCWeb.com.</h3>
+            <h3 class="clearfix">
+                As lead programmer, Wes is responsible for the programming on many of our highest-traffic websites. Wes
+                is also heavilly involved in the project planning, and is often involved in the initial client
+                communications. </h3>
         </div>
-        
+        <div style="clear:left">
+            <img class="picture" src="img/boy5.PNG" alt="Rob Carling">
+
+        </div>
+
+        <div>
+            <div class="about">LEO KLAZ -
+                <div class="about2nd">PROGRAMMER</div>
+            </div>
+            <h3 class="clearfix">
+                Leo joined HBCWeb in June 2008 and has been a huge contributingfactor to the company's success. Leo is
+                responsible for maintaining all of the databases that power every dynamic website that we build and has
+                gracioisly accepted the role of Office System Administrator. </h3>
+        </div>
+
     </main>
     <footer>
 
