@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Javascript
+    </title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div id="my-div">
+        Seniena
+    </div>
+    <script>
+        let myDiv = document.getElementById('my-div');
+        myDiv.innerHTML = '<div id="another-div">New Text</div>';
+        let anotherDiv = document.getElementById('another-div');
+        anotherDiv.innerHTML = '<h1 style="color: green;">Labas - aš krabas!</h1>';
+
+        let temp = myDiv.innerHTML;
+        let myX = "";
+        myX += '<div style="border: 2px solid red; padding: 20px">';
+        myX += temp;
+        myX += "</div>";
+        myDiv.innerHTML = myX;
+
+        let temp2 = myDiv.innerHTML;
+        let myZ = "";
+        myZ += '<div style="border: 2px solid black; padding: 20px; background-color: yellow">';
+        myZ += temp2;
+        myZ += "</div>";
+        myDiv.innerHTML = myZ;
+    </script>
+</body>
+
+</html>
