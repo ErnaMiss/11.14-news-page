@@ -47,17 +47,26 @@
     //     console.log("Skaicius nepolindromas")
     //  }
 
-    let n = 111113;
-    let a = n % 10;
-    let b = Math.floor(n / 10) %10;
-    let c = Math.floor(n / 100) % 10;
-    let d = Math.floor(n / 1000) % 10;
-    let e = Math.floor(n / 10000) % 10;
-    let f = Math.floor(n / 100000)
-    if ((a+b+c+d+e+f) % 4 == 0){
-        console.log("bilietas laimingas")
+    // let n = 111113;
+    // let a = n % 10;
+    // let b = Math.floor(n / 10) %10;
+    // let c = Math.floor(n / 100) % 10;
+    // let d = Math.floor(n / 1000) % 10;
+    // let e = Math.floor(n / 10000) % 10;
+    // let f = Math.floor(n / 100000)
+    // if ((a+b+c+d+e+f) % 4 == 0){
+    //     console.log("bilietas laimingas")
+    // } else {
+    //     console.log("Bilietas nieko nelaimėjo")
+    // }
+
+    let m = 2004;
+    if ((m % 4 ==0) && (m !== 0)){
+        console.log("metai keliamieji")
+    } else if (m % 400 ==0){
+        console.log("metai taip pat keliamieji")
     } else {
-        console.log("Bilietas nieko nelaimėjo")
+        console.log("metai nekeliamieji")
     }
 
 
