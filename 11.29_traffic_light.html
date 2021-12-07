@@ -332,17 +332,38 @@
 
         //17 ciklai
   
-            let n= 238795;
-            let x=0;
-        while (n>0) {
-            x += n % 10;
-            n = Math.floor(n / 10);
+        //     let n= 238795;
+        //     let x=0;
+        // while (n>0) {
+        //     x += n % 10;
+        //     n = Math.floor(n / 10);
             
           
-        }console.log(x); //jei skliaustelius uzdaryciau po consoles, tai spausdins kiekviena operacija atskirai
-    
+        // }console.log(x); //jei skliaustelius uzdaryciau po consoles, tai spausdins kiekviena operacija atskirai
+            
+        //18 ciklai
+        let n=25465;
+        let x=0;
+        while (n>0){
+            i=n%10;
+            n=Math.floor(n/10);
+            x=x*10+i;
+        
+            
+        }console.log(x)
+        
 
+// dvyliktas
 
+        //    for (let x=10; x<100; x++){
+        //        let a = x %10;
+        //        let b = Math.floor(x/10)%10;
+        //        if(Math.floor(a*3) == b && a*10+b == x-36){
+        //            console.log(x + " TAS SKAIČIUS");
+        //            console.log(b + " dešimčių skaitmuo");
+        //            console.log(a + " vienetų skaitmuo")
+        //        }
+        //    }
 
 
 
