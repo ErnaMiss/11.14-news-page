@@ -5,7 +5,11 @@
     <title>11.14 News page 1</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+    </style>
     </style>
 </head>
 <div id="my-div">
@@ -13,11 +17,8 @@
 </div>
 <body>
 <script>
-    let myDiv = document.getElementBy Id(my-div);
-    myDiv.innerHTML = '<div id="another-div'>New text,/div>;
-        let anotherDiv = document.getElementById('another-div');
-        anotherDiv.innerHTML = 'pstyle=color:red;">Hello world!'
-        )
+   let elem = document.getElementById("my-div");
+   elem.style.border = "1px solid red"
 
 </script>
 
