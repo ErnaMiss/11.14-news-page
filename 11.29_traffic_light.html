@@ -331,40 +331,105 @@
 
 
         //17 ciklai
-  
+
         //     let n= 238795;
         //     let x=0;
         // while (n>0) {
         //     x += n % 10;
         //     n = Math.floor(n / 10);
-            
-          
+
+
         // }console.log(x); //jei skliaustelius uzdaryciau po consoles, tai spausdins kiekviena operacija atskirai
-            
+
         //18 ciklai
         // let n=25465;
         // let x=0;
         // while (n>0){
         //     i=n%10;
         //     n=Math.floor(n/10);
-        //     x=x*10+i;
-        
-            
+        //     x=x*10+i;       
         // }console.log(x)
 
+
+
         //19 ciklai
-        let n=568945;
-        let x=0;
-        while (n>0){
-            i=n>10;
-            n=Math.floor(n/10);
-            x>=i;
-        }console.log(x)
+
+        // let largest = 0;
+        // let smallest = 9;
+        // n = 12594;
+        // while (n) {
+        //     let r = n % 10;
 
 
+        //     largest = Math.max(r, largest);
 
+        //     smallest = Math.min(r, smallest);
 
+        //     n = parseInt(n / 10);
+        // }
+        // console.log("didžiausias skaicius " + largest)
+        // console.log("mažiausias skaicius " + smallest)
 
+        //20 ciklai
+
+        // let pal=2;
+        // let metai=0;
+        // let sum=100;
+        // while (sum<100000){
+        //     sum = sum*(1+(pal/100));
+        //     metai++;
+        // }
+        // console.log("per "+metai+ " metus")
+        // console.log("susikaupė "+sum+" eur")
+        // console.log("su "+pal + " % palukanomis")
+
+        //21 ciklai
+        // let x=1;
+        // let n=1;
+        // let z=1;
+        // let m=100;
+        //     while (n<10){
+        // z=z*2;
+        // n++;
+        //     }console.log("a) "+z+" ziedai")
+        //     console.log("po " +n+" dienų")
+
+        // let x=1;
+        // let t=10000;
+        // let d=0;
+        // while (x<=t/2){
+        //     d++;
+        //     x=x*2;
+        // }
+        // console.log("po "+d+" dienų")
+        // console.log("užsiklos pusė ežero žiedais")
+
+        //22 ciklai
+        //    let m1=3;
+        //    let m=1;
+        //    let d=0;
+        //    n=16;
+        //     while (m1<=n){
+        //         n=n-(m1+m*d);
+        //         d++;
+        //     }     
+
+        //    console.log("sodininkas dirbs "+d+" dienas")
+
+        //MASYVAI
+        //1
+       let n=[];
+       for (let i=0; i<30; i++){ 
+            n[i] = Math.floor(Math.random()*(25-5)+6);
+        }
+        console.log(n)
+        let sum10=0;  //2a
+        for (let i=0; i<30; i++){
+            if (n[i]>10){
+                sum10++;
+            }
+        }
+        console.log(sum10)
     </script>
 
 </body>
